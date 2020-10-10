@@ -7,6 +7,8 @@
 #   available at: https://www.gnu.org/licenses/gpl-3.0.txt
 # (C) 2020 K4YT3X
 
+#Include /etc/ssh/ssh_config.d/*.conf
+
 Host *
 
     # disable unnecessary forwardings
