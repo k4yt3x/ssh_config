@@ -18,7 +18,7 @@ You can install this config to `/etc/ssh/ssh_config` to make variables in this c
 
 ```shell
 # download the configuration file from GitHub using curl or other methods
-curl https://raw.githubusercontent.com/k4yt3x/ssh_config/master/ssh_config ~/ssh_config
+curl https://raw.githubusercontent.com/k4yt3x/ssh_config/master/ssh_config -o ~/ssh_config
 
 # backup the original ssh_config
 sudo cp /etc/ssh/ssh_config /etc/ssh/ssh_config.backup
@@ -41,7 +41,7 @@ You may also install this configuration file for the current user, which overwri
 
 ```shell
 # download the configuration file from GitHub using curl or other methods
-curl https://raw.githubusercontent.com/k4yt3x/ssh_config/master/ssh_config ~/ssh_config
+curl https://raw.githubusercontent.com/k4yt3x/ssh_config/master/ssh_config -o ~/ssh_config
 
 # backup the original ssh_config
 cp ~/.ssh/config ~/.ssh/config.backup
