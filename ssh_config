@@ -1,7 +1,7 @@
 # Name: K4YT3X's Hardened OpenSSH Client Configuration
 # Author: K4YT3X
 # Date Created: October 10, 2020
-# Last Updated: October 10, 2020
+# Last Updated: November 20, 2020
 
 # Licensed under the GNU General Public License Version 3 (GNU GPL v3),
 #   available at: https://www.gnu.org/licenses/gpl-3.0.txt
@@ -54,6 +54,10 @@ Host *
 
     # do not send any local environment variables
     SendEnv
+
+    # send a keepalive message to the server when the session has been idle for 60 seconds
+    # this prevents/detects connection timeouts
+    ServerAliveInterval 60
 
     # increase the number of password retries
     NumberOfPasswordPrompts 5
