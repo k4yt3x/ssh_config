@@ -6,10 +6,10 @@ This repository hosts my hardened version of OpenSSH client (8.2+) configuration
 
 ## Usages
 
-For convenience, I have pointed the URL `https://akas.io/ssh` to the `ssh_config` file. You may therefore download the `ssh_config` file with the following command. However, be sure to check the file's integrity after downloading it if you choose to download using this method.
+For convenience, I have pointed the URL `https://k4t.io/ssh` to the `ssh_config` file. You may therefore download the `ssh_config` file with the following command. However, be sure to check the file's integrity after downloading it if you choose to download using this method.
 
 ```shell
-curl -sSL akas.io/ssh -o ssh_config
+curl -L k4t.io/ssh -o ssh_config
 ```
 
 ### Method 1: Use as System Default
