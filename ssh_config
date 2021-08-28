@@ -1,11 +1,11 @@
 # Name: K4YT3X's Hardened OpenSSH Client Configuration
 # Author: K4YT3X
 # Date Created: October 10, 2020
-# Last Updated: November 20, 2020
+# Last Updated: August 28, 2021
 
 # Licensed under the GNU General Public License Version 3 (GNU GPL v3),
 #   available at: https://www.gnu.org/licenses/gpl-3.0.txt
-# (C) 2020 K4YT3X
+# (C) 2020-2021 K4YT3X
 
 #Include /etc/ssh/ssh_config.d/*.conf
 
@@ -53,7 +53,7 @@ Host *
     KexAlgorithms curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256
 
     # do not send any local environment variables
-    SendEnv
+    #SendEnv
 
     # send a keepalive message to the server when the session has been idle for 60 seconds
     # this prevents/detects connection timeouts
