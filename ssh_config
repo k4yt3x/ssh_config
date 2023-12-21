@@ -1,11 +1,11 @@
 # Name: K4YT3X's Hardened OpenSSH Client Configuration
 # Author: K4YT3X
 # Date Created: October 10, 2020
-# Last Updated: August 28, 2021
+# Last Updated: December 21, 2023
 
 # Licensed under the GNU General Public License Version 3 (GNU GPL v3),
 #   available at: https://www.gnu.org/licenses/gpl-3.0.txt
-# (C) 2020-2021 K4YT3X
+# (C) 2020-2023 K4YT3X
 
 #Include /etc/ssh/ssh_config.d/*.conf
 
@@ -38,12 +38,14 @@ Host *
     # ask the user if the user wants to accept the new host's host key
     StrictHostKeyChecking ask
 
-    # hash the entries in the known_hosts file to prevent diclosure
+    # hash the entries in the known_hosts file to prevent disclosure
     #   of the file's content
     HashKnownHosts yes
 
     # explicitly define cryptography algorithms to avoid the use of weak algorithms
-    Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+    # AES CTR modes have been removed to mitigate the Terrapin attack
+    #   https://terrapin-attack.com/
+    Ciphers aes256-gcm@openssh.com,aes128-gcm@openssh.com
     HostKeyAlgorithms ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com
     MACs hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,umac-128-etm@openssh.com
 
