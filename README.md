@@ -4,6 +4,8 @@ This repository hosts my hardened version of OpenSSH client (8.2+) configuration
 
 **Please review the configuration file carefully before applying it.** You are responsible for actions done to your own system. For example, you might want to enable `GSSAPIAuthentication` if you use Kerberos authentication.
 
+You may also want to check out the [SSH Hardening Guides](https://www.ssh-audit.com/hardening_guides.html).
+
 ## Usages
 
 For convenience, I have pointed the URL `https://k4t.io/ssh` to the `ssh_config` file. You may therefore download the `ssh_config` file with the following command. However, be sure to check the file's integrity after downloading it if you choose to download using this method.
