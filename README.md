@@ -8,10 +8,10 @@ In addition to this configuration, you may also want to check out the [SSH Harde
 
 ## Usages
 
-For convenience, I have pointed the URL `https://k4t.io/ssh` to the `ssh_config` file. You may therefore download the `ssh_config` file with the following command. However, be sure to check the file's integrity after downloading it if you choose to download using this method.
+For convenience, I have pointed the URL `https://kt.ax/ssh` to the `ssh_config` file. You may therefore download the `ssh_config` file with the following command. However, be sure to check the file's integrity after downloading it if you choose to download using this method.
 
 ```shell
-curl -L k4t.io/ssh -o ssh_config
+curl -L kt.ax/ssh -o ssh_config
 ```
 
 ### Method 1: Use as System Default
